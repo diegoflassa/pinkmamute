@@ -455,7 +455,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'resources/js/placeholder.js', 
+		nope: 'vendors/placeholders-4.0.1/placeholders.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						/*Placeholders.init({
