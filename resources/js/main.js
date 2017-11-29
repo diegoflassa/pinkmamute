@@ -77,9 +77,9 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/image01.png', title : '<div class="slide-content"><div></div></div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.png', title : '<div class="slide-content"><div></div></div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.png', title : '<div class="slide-content"><div></div></div>', thumb : '', url : ''} 
+											{image : 'resources/images/slider-images/image01.png', title : '<div class="slide-content"><div></div></div>', thumb : '', url : ''},
+											{image : 'resources/images/slider-images/image02.png', title : '<div class="slide-content"><div></div></div>', thumb : '', url : ''},
+											{image : 'resources/images/slider-images/image03.png', title : '<div class="slide-content"><div></div></div>', thumb : '', url : ''} 
 									],
 									
 		// Theme Options			   
@@ -238,7 +238,7 @@ BRUSHED.contactForm = function(){
 			
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "resources/php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -270,7 +270,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
+          modpath: 'resources/js/twitter/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -453,7 +453,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
+		nope: 'resources/js/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						/*Placeholders.init({

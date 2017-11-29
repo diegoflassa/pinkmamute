@@ -340,7 +340,7 @@ h3.spec {
 }
 
 #home-slider .slide-content  > div {
-	background: url(../img/pinkmamute.png) no-repeat;
+	background: url(../images/pinkmamute.png) no-repeat;
 	height: 211px;
 	margin: 0 auto;
 	width: 43%;
@@ -516,7 +516,7 @@ header #logo {
 }
 
 header #logo a {
-	background: url(../img/logo.png) no-repeat;
+	background: url(../images/logo.png) no-repeat;
 	width: 185px;
 	height: 50px;
 	text-indent: -9999px;
@@ -580,7 +580,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .menu-nav {
-	background:url(../img/menu-mobile.png) 0 0 no-repeat;
+	background:url(../images/menu-mobile.png) 0 0 no-repeat;
 	width: 16px;
 	height: 16px;
 	display: block;
