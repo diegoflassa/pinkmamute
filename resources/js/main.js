@@ -119,7 +119,9 @@ BRUSHED.slider = function(){
 ================================================== */
 
 BRUSHED.nav = function(){
-	$('.sticky-nav').waypoint('sticky');
+  var sticky = new Waypoint.Sticky({
+    element: $('.sticky-nav')[0]
+  });
 }
 
 
