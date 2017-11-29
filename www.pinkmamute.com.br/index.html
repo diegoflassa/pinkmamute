@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> </html><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"></html><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"></html><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"></html><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+
+
+<title>Pink Mamute</title>   
+
+<meta name="description" content="Estamparia" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on" />  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="./_include/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Main Style -->
+<link href="./_include/css/main.css" rel="stylesheet" />
+
+<!-- Supersized -->
+<link href="./_include/css/supersized.css" rel="stylesheet" />
+<link href="./_include/css/supersized.shutter.css" rel="stylesheet" />
+
+<!-- FancyBox -->
+<link href="./_include/css/fancybox/jquery.fancybox.css" rel="stylesheet" />
+
+<!-- Font Icons -->
+<link href="./_include/css/fonts.css" rel="stylesheet" />
+
+<!-- Shortcodes -->
+<link href="./_include/css/shortcodes.css" rel="stylesheet" />
+
+<!-- Responsive -->
+<link href="./_include/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link href="./_include/css/responsive.css" rel="stylesheet" />
+
+<!-- Supersized -->
+<link href="./_include/css/supersized.css" rel="stylesheet" />
+<link href="./_include/css/supersized.shutter.css" rel="stylesheet" />
+
+<!-- Google Font -->
+<link href='../fonts.googleapis.com/css_a31aea4f.css' rel='stylesheet' type='text/css' />
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#" />
+
+<link rel="apple-touch-icon" href="#" />
+<link rel="apple-touch-icon" sizes="114x114" href="#" />
+<link rel="apple-touch-icon" sizes="72x72" href="#" />
+<link rel="apple-touch-icon" sizes="144x144" href="#" />
+
+<!-- Modernizr -->
+<script src="./_include/js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="overlay"></div>
+
+	<!-- Header -->
+	<header>
+		<div class="sticky-nav">
+			<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+			
+			<div id="logo">
+				<a id="goUp" href="#home-slider" title="Studio Pink Mamute">Studio Pink Mamute</a>
+			</div>
+			
+			<nav id="menu">
+				<ul id="menu-nav">
+					<li class="current"><a href="#home-slider">Home</a></li>
+					<li><a href="#work">Projetos</a></li>
+					<li><a href="#about">Quem Somos</a></li>
+					<li><a href="#contact">Contato</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<!-- End Header -->
+	<div>
+		<div id="pink-info" style="width:20%;float: right;margin-top: 5%;margin-right: 5%;"> <!-- 45% -->
+			<div class="info-block" style="background-color: rgba(0,0,0, 0.40)">
+				<div class="info-text" style="padding-right: 0px">
+					<h3><span class="color-text">SOLUÇÕES&nbsp;</span> para design de superfícies</h3>
+					<p><strong>Desenvolvimento de projetos inovadores de design de superfícies para diversas aplicações: estamparia convencional, estamparia digital, artesanato e decoração.</strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>   
+	
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="icon-chevron-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="icon-chevron-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="icon-chevron-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Our Work Section -->
+<div id="work" class="page">
+	<div class="container">
+    	<!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Nossos Projetos</h2>
+                    <h3 class="title-description">Ilustrações e estampas.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        
+        <!-- Portfolio Projects -->
+        <div class="row">
+        	<div class="span3">
+            	<!-- Filter -->
+                <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                    	<li class="type-work">Projetos</li>
+                        <li><a id="default-filter" href="#filter" data-option-value=".ilu">Estampas Corridas</a></li>
+                        <li><a href="#filter" data-option-value=".est">Estampas Localizadas</a></li>
+                    </ul>
+                </nav>
+                <!-- End Filter -->
+            </div>
+            
+			<!-- itens do portfolio -->
+            <div class="span9">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
+                        
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Red Poppy Delight" href="./_include/img/work/full/ilu1.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu1_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                            
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Psychedelic Optical" href="./_include/img/work/full/ilu2.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu2_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                            
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Wild Magic Deers" href="./_include/img/work/full/ilu3.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu3_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                              
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Jaguapitã" href="./_include/img/work/full/ilu4.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu4_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                              
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Feuillage D'été" href="./_include/img/work/full/ilu5.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu5_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                              
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Aves do Brasil" href="./_include/img/work/full/ilu6.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu6_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                              
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Deer Flowers" href="./_include/img/work/full/ilu7.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu7_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                              
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Fabulous Snake" href="./_include/img/work/full/ilu8.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu8_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                              
+                        	<li class="item-thumbs span3 ilu">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Nouvelles Fleurs" href="./_include/img/work/full/ilu9.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/ilu9_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>" />
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="French Girl" href="./_include/img/work/full/est1.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est1_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Dalai Lhama" href="./_include/img/work/full/est2.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est2_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	</li><li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Beach Please" href="./_include/img/work/full/est3.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est3_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project -->
+                                      
+							<!-- Item Project and Filter Name -->
+                        	</li><li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Guaxinim" href="./_include/img/work/full/est4.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est4_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project --> 
+                                       
+							<!-- Item Project and Filter Name -->
+                        	</li><li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Magic Unicorn Skull" href="./_include/img/work/full/est5.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est5_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project -->
+                            
+                                        
+							<!-- Item Project and Filter Name -->
+                        	</li><li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hot As Pepper" href="./_include/img/work/full/est6.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est6_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project -->
+                            
+                                        
+							<!-- Item Project and Filter Name -->
+                        	</li><li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Colorfull Deer" href="./_include/img/work/full/est7.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est7_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project -->
+                            
+                                        
+							<!-- Item Project and Filter Name -->
+                        	</li><li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Lord Monkey" href="./_include/img/work/full/est8.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est8_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project -->
+                            
+                                        
+							<!-- Item Project and Filter Name -->
+                        	</li><li class="item-thumbs span3 est">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Jackalope" href="./_include/img/work/full/est9.png">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="./_include/img/work/thumbs/est9_thumb.png" alt="Esta e outras de nossas estampas podem ser encontradas em produtos nas seguintes lojas virtuais:
+<br/><a class='modal-link' href='https://www.touts.com.br/pink-mamute' target='_blank'>https://www.touts.com.br/pink-mamute</a>
+<br/><a class='modal-link' href='https://www.colab55.com/@pinkmamutestudio' target='_blank'>https://www.colab55.com/@pinkmamutestudio</a>
+<br/><a class='modal-link' href='http://www.vandal.com.br/artista/pinkmamute' target='_blank'>http://www.vandal.com.br/artista/pinkmamute</a>" />
+                        	<!-- End Item Project -->
+                            
+                            
+                        </li></ul>
+                    </section>
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- About Section -->
+<div id="about" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">O Studio <span style="color:#f558a3">Pink</span> Mamute</h2>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+    	
+        <!-- Start Profile -->
+    	<div class="span3 profile">
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span3 profile">
+        	<div class="image-wrap">
+                <img src="./_include/img/profile/profile-02.png" alt="Diana Marchiori" />
+            </div>
+            <h3 class="profile-name" style="color:#f558a3">Diana Marchiori</h3>
+            <p class="profile-description">Formada em Design de Moda, com habilidades em fotografia, desenho e pintura em técnicas variadas: aquarela, nanquim, lápis de cor e marcadores. Professora de design de moda, calçados e jóias.</p>
+            	
+            <div class="social">
+            	<ul class="social-icons">
+                    <li><a href="http://br.linkedin.com/pub/diana-ruschi/71/626/1b0/pt" target="_blank"><i class="icon-linkedin2"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span3 profile">
+        	<div class="image-wrap">
+                <img src="./_include/img/profile/profile-01.png" alt="Isis Pereira" />
+            </div>
+            <h3 class="profile-name" style="color:#f558a3">Isis Pereira</h3>
+            <p class="profile-description">Formada em Design de Moda, com habilidades em ilustração digital, tratamento de imagem, desenho e pintura em técnicas variadas: aquarela, lápis de cor, nanquim e transferência em madeira.</p>
+            	
+            <div class="social">
+            	<ul class="social-icons">
+                    <li><a href="http://br.linkedin.com/pub/isis-pereira/b1/902/5b6/pt" target="_blank"><i class="icon-linkedin2"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Profile -->
+		
+		<!-- Start Profile -->
+    	<div class="span3 profile">
+        </div>
+        <!-- End Profile -->
+        
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Contacte-nos.</h2>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Contact Form -->
+    <div class="row">
+    	<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="#" />
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Nome" value="" name="name" data-rule-required="true" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email" value="" name="email" data-rule-required="true" data-rule-email="true" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Mensagem" name="message" rows="15" cols="40" data-rule-required="true"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="#">Enviar</a>
+                </p>
+                
+                <div id="response">
+                
+                </div>
+            </form>
+         
+        </div>
+        
+        <div class="span3">
+        	<div class="contact-details">
+        		<h3 style="color:#f558a3;font-weight: 600;">INFORMAÇÕES DE CONTATO</h3>
+                <ul>
+                    <li><a href="#" style="color:#ffffff">pinkmamute@gmail.com</a></li>
+                    <li>(11) 98384-3978</li>
+					<li>(19) 99825-3115</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Form -->
+</div>
+</div>
+<!-- End Contact Section -->
+
+<!-- Twitter Feed
+<div id="twitter-feed" class="page-alternate">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <div class="follow">
+                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
+                </div>
+                    
+                <div id="ticker" class="query"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+End Twitter Feed -->
+
+<!-- Socialize -->
+<div id="social-area" class="page-alternate">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <nav id="social">
+                    <ul>
+                        <li><a href="https://twitter.com/pinkmamute" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li><a href="https://www.facebook.com/pinkmamute" target="_blank"><span class="icon-facebook2"></span></a></li>
+                        <li><a href="https://plus.google.com/u/0/100780132902186687995/posts" target="_blank"><span class="icon-google-plus2"></span></a></li>
+                        <li><a href="https://instagram.com/pinkmamute" target="_blank"><span class="icon-instagram"></span></a></li>
+                        <li><a href="http://pinkmamute.tumblr.com/" target="_blank"><span class="icon-tumblr"></span></a></li>
+						<li><a href="https://www.pinterest.com/smamute" target="_blank"><span class="icon-pinterest2"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Socialize -->
+
+<!-- Footer 
+<footer>
+	<p class="credits">&copy;2013 Brushed. <a href="http://themes.alessioatzeni.com/html/brushed/" title="Brushed | Responsive One Page Template">Brushed Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
+</footer>
+ End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="icon-chevron-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="./_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="./_include/js/jquery.validate.js"></script> <!-- Validate -->
+<script src="./_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="./_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="./_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="./_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="./_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="./_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="./_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="./_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="./_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
+</body>
+</html>
