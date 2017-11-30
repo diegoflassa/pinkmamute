@@ -34,7 +34,7 @@
 			twitter_url: "twitter.com",               // [string]   custom twitter url, if any (apigee, etc.)
 			twitter_api_url: "api.twitter.com",       // [string]   custom twitter api url, if any (apigee, etc.)
 			twitter_search_url: "api.twitter.com", // [string]   custom twitter search url, if any (apigee, etc.)
-			template: "{avatar}{join}{text}{time}",   // [string or function] template used to construct each tweet <li> - see code for available vars
+			template: "{avatar}{time}{join}{text}",   // [string or function] template used to construct each tweet <li> - see code for available vars
 			comparator: function(tweet1, tweet2) {    // [function] comparator used to sort tweets (see Array.sort)
 				return tweet2["tweet_time"] - tweet1["tweet_time"];
 			},
@@ -46,7 +46,7 @@
 		}, o);
 
 		// See http://daringfireball.net/2010/07/improved_regex_for_matching_urls
-		var url_regexp = /\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?Â«Â»â€œâ€â€˜â€™]))/gi;
+		var url_regexp = /\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/gi;
 
 		// Expand values inside simple string templates with {placeholders}
 		function t(template, info) {
@@ -244,8 +244,8 @@
 			o.join = s.join_text ? t(' <span class="tweet_join">{join_text}</span> ', o) : ' ';
 			o.avatar = o.avatar_size ?
 				t('<a class="tweet_avatar" href="{user_url}"><img src="{avatar_url}" height="{avatar_size}" width="{avatar_size}" alt="{screen_name}\'s avatar" title="{screen_name}\'s avatar" border="0"/></a>', o) : '';
-			o.text = t('<span class="tweet_text">{tweet_text_fancy}</span>', o);
 			o.time = t('<span class="tweet_time"><a href="{tweet_url}" title="view tweet on twitter">{tweet_relative_time}</a></span>', o);
+			o.text = t('<span class="tweet_text">{tweet_text_fancy}</span>', o);
 			o.reply_action = t('<a class="tweet_action tweet_reply" href="{reply_url}">reply</a>', o);
 			o.retweet_action = t('<a class="tweet_action tweet_retweet" href="{retweet_url}">retweet</a>', o);
 			o.favorite_action = t('<a class="tweet_action tweet_favorite" href="{favorite_url}">favorite</a>', o);
