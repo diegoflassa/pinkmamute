@@ -479,6 +479,29 @@ h3.spec {
 	margin-left: -5px;	
 }
 
+/* Remove ghost image from icon-chevron-* */
+.icon-chevron-left {
+  width:0px;
+  height:0px;
+}
+
+/* Remove ghost image from icon-chevron-* */
+.icon-chevron-right {
+  width:0px;
+  height:0px;
+}
+
+/* Remove ghost image from icon-chevron-* */
+.icon-chevron-up {
+  width:0px;
+  height:0px;
+}
+
+/* Remove ghost image from icon-chevron-* */
+.icon-chevron-down {
+  width:0px;
+  height:0px;
+}
 
 /* ==================================================
    Header
