@@ -1,3 +1,4 @@
+<!-- BAsed on http://themes.alessioatzeni.com/html/brushed/ -->
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> </html><![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"></html><![endif]-->
@@ -75,12 +76,10 @@
       }, i[r].l = 1 * new Date(); a = s.createElement(o),
         m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
     };
-    //TODO
-    //initGAO(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    initGAO(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    //TODO: ADD UA CODE
-    //ga('create', 'UA-XXXXXXXX-X', 'auto');
-    //ga('send', 'pageview');
+    ga('create', 'UA-110666190-1', 'auto');
+    ga('send', 'pageview');
   </script>
 </head>
 
@@ -700,13 +699,15 @@ End Twitter Feed -->
       easter_egg.load();
       console.log("Konami code included  :-)");
 
-      messageResource.init({filePath : './resources/data/'});
-      messageResource.load('settings');
-      var uaId = messageResource.get('google.ua', 'settings', 'UNDEFINED');
-      var gtmId = messageResource.get('google.gtm', 'settings', 'UNDEFINED');
+      if(messageResource){
+        messageResource.init({filePath : './resources/data/'});
+        messageResource.load('settings');
+        var letters = messageResource.get('prop.letters', 'settings', 'UNDEFINED');
+        var numbers = messageResource.get('prop.numbers', 'settings', 'UNDEFINED');
 
-      console.log("Got UA id: " + uaId);
-      console.log("Got GTM id: " + gtmId);
+        console.log("Got letters: " + letters);
+        console.log("Got numbers: " + numbers);
+      }
     }
 
     function myEasterEgg() {
@@ -759,10 +760,13 @@ End Twitter Feed -->
   <!-- Fancybox & Fancybox Media-->
   <script src="./vendors/fancybox-2.1.4/source/jquery.fancybox.pack.js"></script>
   <script src="./vendors/fancybox-2.1.4/source/jquery.fancybox-media.js"></script>
+  <!-- MessageResource -->
+  <script src="./vendors/messageresource-1.1/messageResource.js"></script>
 
 
   <!-- -->
   <!-- Scripts: Local -->
+
   <script src="./resources/js/main.js"></script>
 
 </body>
