@@ -87,28 +87,6 @@ BRUSHED.slider = function(){
 		mouse_scrub				:	0
 		
 	});
-	
-	/*
-	var messages = ['<h3><span class="color-text">SOLUÃ‡Ã•ES&nbsp;</span> PARA DESIGN DE SUPERFÃCIES</h3><p>Desenvolvimento de projetos inovadores de design de superfÃ­cies para diversas aplicaÃ§Ãµes: estamparia convencional, estamparia digital, artesanato e decoraÃ§Ã£o.</p>'];
-	
-	var count = 0;
-
-	theme.afterAnimation = function() {
-		var $pink = $('#pink-info');
-		var $parent = $pink.parent();
-		count = (count + 1) % messages.length;
-		var top = $pink[0].style.marginTop == '5%' ? '25%' : '5%';
-		var _float = count >= 2 ? 'right' : 'left';
-		
-		$pink.fadeOut(400, function() {
-			$pink.remove();
-			var $pink_info = $('<div id="pink-info" style="width:20%;" ></div>').css('margin-top', top).css('float', _float);
-			if(_float == 'left') { $pink_info.css('margin-left','5%'); } else { $pink_info.css('margin-right','5%'); }; 
-			$pink_info.append('<div class="info-block" style="background-color: rgba(99, 100, 97, 0.27)"><div class="info-text" style="padding-right: 0px"></div></div>');
-			$pink_info.find('.info-text').append(messages[count]);
-			$parent.hide().append($pink_info).fadeIn(400);
-		});
-	};*/
 
 }
 
