@@ -14,7 +14,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Desenvolvimento de projetos inovadores de design de superfícies para diversas aplicações: estamparia convencional, estamparia digital, artesanato e decoração" />
+  <meta name="description" content="Desenvolvimento de projetos inovadores de design de superfícies para diversas aplicações: estamparia convencional, estamparia digital, artesanato e decoração"
+  />
   <meta name="google-site-verification" content="YOUR_CODE" />
   <meta name="robots" content="index, follow" />
   <meta name="googlebot" content="index, follow" />
@@ -59,7 +60,8 @@
 
   <!-- Supersized -->
   <link rel="stylesheet" href="./vendors/supersized-3.2/slideshow/css/supersized.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="./vendors/supersized-3.2/slideshow/theme/supersized.shutter.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="./vendors/supersized-3.2/slideshow/theme/supersized.shutter.css" type="text/css" media="screen"
+  />
 
   <!-- Google Font -->
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900'
@@ -185,7 +187,7 @@
       <div class="row">
         <div class="span12">
           <hr>
-        </div>	
+        </div>
       </div>
       <!-- End Separator -->
 
@@ -199,6 +201,10 @@
         </div>
       </div>
       <!-- End Title Page -->
+
+      <a href="./resources/images/progressive.png" class="progressive replace">
+        <img src="./resources/images/progressive-tiny.png" class="preview" alt="image" />
+      </a>
 
       <!-- Portfolio Projects -->
       <div class="row">
@@ -232,8 +238,7 @@
                     <span class="overlay-img-thumb font-icon-plus"></span>
                   </a>
                   <!-- Thumb Image and Description -->
-                  <img src="./resources/images/work/thumbs/ilu1_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>"
-                  />
+                  <img src="./resources/images/work/thumbs/ilu1_thumb.png" alt="A cada estação lançamos novas coleções, e também desenvolvemos estampas exclusivas de acordo com o briefing dos clientes.<br>"/>
                 </li>
                 <!-- End Item Project -->
 
@@ -518,7 +523,7 @@
         <!-- Start Profile -->
         <div class="span3 profile">
           <div class="image-wrap">
-            <img src="./resources/images/profile/profile-02.png" alt="Diana Marchiori" />
+            <img id="img-profile-diana" src="./resources/images/profile/profile-default.png" alt="Diana Marchiori" />
           </div>
           <h3 class="profile-name" style="color:#f558a3">Diana Marchiori</h3>
           <p class="profile-description">Formada em Design de Moda, com habilidades em fotografia, desenho e pintura em técnicas variadas: aquarela, nanquim,
@@ -527,8 +532,8 @@
           <div class="social">
             <ul class="social-icons">
               <li>
-                <a href="http://br.linkedin.com/pub/diana-ruschi/71/626/1b0/pt" target="_blank">
-                  <i class="icon-linkedin2"></i>
+                <a href="https://www.facebook.com/diana.ruschi" target="_blank">
+                  <i class="icon-facebook2"></i>
                 </a>
               </li>
             </ul>
@@ -539,7 +544,7 @@
         <!-- Start Profile -->
         <div class="span3 profile">
           <div class="image-wrap">
-            <img src="./resources/images/profile/profile-01.png" alt="Isis Pereira" />
+            <img id="img-profile-isis" src="./resources/images/profile/profile-default.png" alt="Isis Pereira" />
           </div>
           <h3 class="profile-name" style="color:#f558a3">Isis Pereira</h3>
           <p class="profile-description">Formada em Design de Moda, com habilidades em ilustração digital, tratamento de imagem, desenho e pintura em técnicas
@@ -548,8 +553,8 @@
           <div class="social">
             <ul class="social-icons">
               <li>
-                <a href="http://br.linkedin.com/pub/isis-pereira/b1/902/5b6/pt" target="_blank">
-                  <i class="icon-linkedin2"></i>
+                <a href="https://www.facebook.com/isis.pereira.50" target="_blank">
+                  <i class="icon-facebook2"></i>
                 </a>
               </li>
             </ul>
@@ -713,15 +718,7 @@ End Twitter Feed -->
       easter_egg.load();
       console.log("Konami code included  :-)");
 
-      if (messageResource) {
-        messageResource.init({ filePath: './resources/data/' });
-        messageResource.load('settings');
-        var letters = messageResource.get('prop.letters', 'settings', 'UNDEFINED');
-        var numbers = messageResource.get('prop.numbers', 'settings', 'UNDEFINED');
-
-        console.log("Got letters: " + letters);
-        console.log("Got numbers: " + numbers);
-      }
+      chooseProfilePic();
     }
 
     function myEasterEgg() {
@@ -774,14 +771,13 @@ End Twitter Feed -->
   <!-- Fancybox & Fancybox Media-->
   <script src="./vendors/fancybox-2.1.4/source/jquery.fancybox.pack.js"></script>
   <script src="./vendors/fancybox-2.1.4/source/jquery.fancybox-media.js"></script>
-  <!-- MessageResource -->
-  <script src="./vendors/messageresource-1.1/messageResource.js"></script>
 
 
   <!-- -->
   <!-- Scripts: Local -->
 
   <script src="./resources/js/main.js"></script>
+  <script src="./resources/js/utils.js"></script>
 
 </body>
 
